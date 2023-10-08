@@ -1,11 +1,12 @@
+package tn.esprit.gestionzoo.main;
+
+import tn.esprit.gestionzoo.entities.Animal;
+import tn.esprit.gestionzoo.entities.Zoo;
+
 public class ZooManagement {
 
     public static void main(String[] args) {
-        Animal lion = new Animal();
-        lion.name = "Simba";
-        lion.age = 8;
-        lion.family = "Cats";
-        lion.isMammal = true;
+        Animal lion = new Animal("Test","Lion",14, false);
 
         Zoo myZoo = new Zoo("Wildlife Park", "Ariana");
         Zoo notMyZoo = new Zoo("WaterPark", "Siliana");
@@ -40,7 +41,7 @@ public class ZooManagement {
         System.out.println("a" + myZoo.removeAnimal(dog));
         myZoo.displayAnimals();
 
-//        System.out.println(Zoo.comparerZoo(myZoo, notMyZoo));
+//        System.out.println(tn.esprit.gestionzoo.entities.Zoo.comparerZoo(myZoo, notMyZoo));
 //        System.out.println(myZoo.isZooFull());
 
     }
